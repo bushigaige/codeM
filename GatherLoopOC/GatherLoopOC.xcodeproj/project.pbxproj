@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BB3E4D0432F7DBC5484CC8E /* GLHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2F4FC83B4F7AF9FB9765A /* GLHomeViewController.m */; };
+		166176BFC6B644E276806BE6 /* GLMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E88399CAE1D8B7B43F43B1 /* GLMeViewController.m */; };
+		1DC6F0F73F04A1CFC61C136D /* GLLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 061B548B5A36408636D89F58 /* GLLiveViewController.m */; };
+		450527EDC1DD185C8DBA3DFD /* GLTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA1FEF95D1AF6C7B8A07470 /* GLTheme.m */; };
+		5735E7D009EDB59021DF8484 /* GLSmartPlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E0498D7B4A48B21CB028BB /* GLSmartPlanViewController.m */; };
+		6323FC7FC9B5CF972A94AEDD /* GLWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5482D6FEF89668D08C61A61 /* GLWelcomeViewController.m */; };
+		6985C227655A0F058FC679CD /* libPods-GatherLoopOC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C8FD65C48BD6798632A5A99 /* libPods-GatherLoopOC.a */; };
+		6BEB085029F980100B48CD57 /* GLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C860BE41656B74C5A9BDF4E /* GLTabBarController.m */; };
+		73147666F37444CCB1CD8626 /* GLCapsuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F095487E96236DFA58F20EFB /* GLCapsuleViewController.m */; };
+		76039CF57A8EB443A13AD8D5 /* GLMemoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A233C249C727880ABA4FA7C /* GLMemoriesViewController.m */; };
+		7DE175DF5A2E17C88310CF7A /* GLArt.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8D1E71145A6DD57661AB53 /* GLArt.m */; };
+		809B4451B2FC5E7E8459D930 /* GLChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFB0C2BF0B3E0FE4E171E6B /* GLChatViewController.m */; };
+		8D44798239BCA2DF8C080579 /* GLEventHubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3937B3751CFDC538F40BB0A8 /* GLEventHubViewController.m */; };
+		8FA49B067202818B21AD6A79 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCA002CCA60BC507384F68C /* main.m */; };
+		939827DF301F704965507C28 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A995E34339A875AC3934935B /* AppDelegate.m */; };
+		9CDBC6D14F9914833D3F478D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1132AEFB3E18FD498CBD6A4C /* Assets.xcassets */; };
+		A6D7556850195B4E096596AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6942AADC57FB6D41DFD59A8D /* LaunchScreen.storyboard */; };
+		B1CA3AB918B6C415BD4E0D24 /* GLCreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C0E2AAADB02168AAE472D6 /* GLCreateViewController.m */; };
+		DE3F414AA11F5881DC1E10AF /* GLCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C0483D887026B12EF273FC0 /* GLCaptureViewController.m */; };
+		F09594640B248558464B4067 /* GLStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 788825B4CBB7787B9EB0AB67 /* GLStore.m */; };
+		F588182A3E0D290EB54FECE0 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B24CED35D4A018C06CCD6FB /* SceneDelegate.m */; };
+		F5AFE83AAFD46DAEDAABAE7D /* GLIdeasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C174BE9F615519702BB5A00 /* GLIdeasViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		061B548B5A36408636D89F58 /* GLLiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLLiveViewController.m; sourceTree = "<group>"; };
+		1132AEFB3E18FD498CBD6A4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14C26A13F31C3F488AAE0C2B /* GLCaptureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLCaptureViewController.h; sourceTree = "<group>"; };
+		1BFB0C2BF0B3E0FE4E171E6B /* GLChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLChatViewController.m; sourceTree = "<group>"; };
+		1C8FD65C48BD6798632A5A99 /* libPods-GatherLoopOC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GatherLoopOC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2544E5B1E7659A7BA6F06444 /* GatherLoop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GatherLoop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32FADB5B7303B1A315EB35AD /* GLCreateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLCreateViewController.h; sourceTree = "<group>"; };
+		3399FA48E908AD65B493B596 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		3937B3751CFDC538F40BB0A8 /* GLEventHubViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLEventHubViewController.m; sourceTree = "<group>"; };
+		3A233C249C727880ABA4FA7C /* GLMemoriesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLMemoriesViewController.m; sourceTree = "<group>"; };
+		3B8B534426FA915D1D4192FD /* GLHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLHomeViewController.h; sourceTree = "<group>"; };
+		42C0E2AAADB02168AAE472D6 /* GLCreateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLCreateViewController.m; sourceTree = "<group>"; };
+		43133196E858A866EED313C7 /* GLSmartPlanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLSmartPlanViewController.h; sourceTree = "<group>"; };
+		4B24CED35D4A018C06CCD6FB /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		4B75D48CE51B1D08F5FB0EF3 /* GLWelcomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLWelcomeViewController.h; sourceTree = "<group>"; };
+		4F22EC65BC2495D46565939F /* GLMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLMeViewController.h; sourceTree = "<group>"; };
+		4F295CF849D6E855D71E51FA /* GLEventHubViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLEventHubViewController.h; sourceTree = "<group>"; };
+		531B7D6CA3D41DBC780CDF64 /* GLTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLTabBarController.h; sourceTree = "<group>"; };
+		599AB7EC1692F94592FB1CFA /* GLStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLStore.h; sourceTree = "<group>"; };
+		60E0498D7B4A48B21CB028BB /* GLSmartPlanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLSmartPlanViewController.m; sourceTree = "<group>"; };
+		6942AADC57FB6D41DFD59A8D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6B18D712C426C4349DB10490 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		6C174BE9F615519702BB5A00 /* GLIdeasViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLIdeasViewController.m; sourceTree = "<group>"; };
+		6C860BE41656B74C5A9BDF4E /* GLTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLTabBarController.m; sourceTree = "<group>"; };
+		76E88399CAE1D8B7B43F43B1 /* GLMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLMeViewController.m; sourceTree = "<group>"; };
+		788825B4CBB7787B9EB0AB67 /* GLStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLStore.m; sourceTree = "<group>"; };
+		7C0483D887026B12EF273FC0 /* GLCaptureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLCaptureViewController.m; sourceTree = "<group>"; };
+		930326BFB167D3C79ECB7105 /* Pods-GatherLoopOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GatherLoopOC.debug.xcconfig"; path = "Target Support Files/Pods-GatherLoopOC/Pods-GatherLoopOC.debug.xcconfig"; sourceTree = "<group>"; };
+		9AA1FEF95D1AF6C7B8A07470 /* GLTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLTheme.m; sourceTree = "<group>"; };
+		9AF2F4FC83B4F7AF9FB9765A /* GLHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLHomeViewController.m; sourceTree = "<group>"; };
+		9FDD7B2873687F07596FF30B /* Pods-GatherLoopOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GatherLoopOC.release.xcconfig"; path = "Target Support Files/Pods-GatherLoopOC/Pods-GatherLoopOC.release.xcconfig"; sourceTree = "<group>"; };
+		A5482D6FEF89668D08C61A61 /* GLWelcomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLWelcomeViewController.m; sourceTree = "<group>"; };
+		A995E34339A875AC3934935B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A9B3195AB3A4F421CBE662A1 /* GLChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLChatViewController.h; sourceTree = "<group>"; };
+		AA8D1E71145A6DD57661AB53 /* GLArt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLArt.m; sourceTree = "<group>"; };
+		AE63EDA156C289228AB42F75 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B22C25891FFD81C3E775139A /* GLLiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLLiveViewController.h; sourceTree = "<group>"; };
+		BED0C405470D4449E2F36B73 /* GLCapsuleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLCapsuleViewController.h; sourceTree = "<group>"; };
+		C0F24C332C54E3E8F4B0BC25 /* GLMemoriesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLMemoriesViewController.h; sourceTree = "<group>"; };
+		C9E43B6FAAA520278EB0A8B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7368130A77393920258675C /* GLIdeasViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLIdeasViewController.h; sourceTree = "<group>"; };
+		E67DC139E2F84172C415D4B6 /* GLTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLTheme.h; sourceTree = "<group>"; };
+		EDCA002CCA60BC507384F68C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F095487E96236DFA58F20EFB /* GLCapsuleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLCapsuleViewController.m; sourceTree = "<group>"; };
+		F919D6C9F496A114285A637D /* GLArt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLArt.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		56D9DEB7209CC2B39E593F03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6985C227655A0F058FC679CD /* libPods-GatherLoopOC.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08638152FE2B46CAC69DD01C /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				E67DC139E2F84172C415D4B6 /* GLTheme.h */,
+				9AA1FEF95D1AF6C7B8A07470 /* GLTheme.m */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		186495F7DA296BF880DF3A22 = {
+			isa = PBXGroup;
+			children = (
+				695BB0D5ACF11B644B95B187 /* GatherLoopOC */,
+				D71BD8A0B6A6AA54EDBA6454 /* Products */,
+				62B9401AFBA533C0AFDCC4D0 /* Pods */,
+				1E8702D3019C13FB98217F14 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1E8702D3019C13FB98217F14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C8FD65C48BD6798632A5A99 /* libPods-GatherLoopOC.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		41DB9BA1FF75C0F7ED6CFAE1 /* SmartPlan */ = {
+			isa = PBXGroup;
+			children = (
+				43133196E858A866EED313C7 /* GLSmartPlanViewController.h */,
+				60E0498D7B4A48B21CB028BB /* GLSmartPlanViewController.m */,
+			);
+			path = SmartPlan;
+			sourceTree = "<group>";
+		};
+		41F613D5007F28910CD8FCBE /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				4F22EC65BC2495D46565939F /* GLMeViewController.h */,
+				76E88399CAE1D8B7B43F43B1 /* GLMeViewController.m */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		4AEA903081B63C4D3A8A0F5C /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				B22C25891FFD81C3E775139A /* GLLiveViewController.h */,
+				061B548B5A36408636D89F58 /* GLLiveViewController.m */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		5E607C879B11C8816A0D578B /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				4B75D48CE51B1D08F5FB0EF3 /* GLWelcomeViewController.h */,
+				A5482D6FEF89668D08C61A61 /* GLWelcomeViewController.m */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		62B9401AFBA533C0AFDCC4D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				930326BFB167D3C79ECB7105 /* Pods-GatherLoopOC.debug.xcconfig */,
+				9FDD7B2873687F07596FF30B /* Pods-GatherLoopOC.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6357541D142E5C86990EA026 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3B8B534426FA915D1D4192FD /* GLHomeViewController.h */,
+				9AF2F4FC83B4F7AF9FB9765A /* GLHomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		695BB0D5ACF11B644B95B187 /* GatherLoopOC */ = {
+			isa = PBXGroup;
+			children = (
+				AE63EDA156C289228AB42F75 /* AppDelegate.h */,
+				A995E34339A875AC3934935B /* AppDelegate.m */,
+				AF21E34502E32EA7A3B38104 /* Classes */,
+				EDCA002CCA60BC507384F68C /* main.m */,
+				3399FA48E908AD65B493B596 /* PrefixHeader.pch */,
+				AD3066B25B63DF8C151AB1D0 /* Resources */,
+				6B18D712C426C4349DB10490 /* SceneDelegate.h */,
+				4B24CED35D4A018C06CCD6FB /* SceneDelegate.m */,
+			);
+			path = GatherLoopOC;
+			sourceTree = "<group>";
+		};
+		889B885417315F275032C8D4 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				32FADB5B7303B1A315EB35AD /* GLCreateViewController.h */,
+				42C0E2AAADB02168AAE472D6 /* GLCreateViewController.m */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		8AD1D9A05D09A56F683DABC3 /* Capture */ = {
+			isa = PBXGroup;
+			children = (
+				14C26A13F31C3F488AAE0C2B /* GLCaptureViewController.h */,
+				7C0483D887026B12EF273FC0 /* GLCaptureViewController.m */,
+			);
+			path = Capture;
+			sourceTree = "<group>";
+		};
+		8C870A8C99A79A097D476EFD /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				531B7D6CA3D41DBC780CDF64 /* GLTabBarController.h */,
+				6C860BE41656B74C5A9BDF4E /* GLTabBarController.m */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		8DDC23CE1E28A011B23E5381 /* Capsule */ = {
+			isa = PBXGroup;
+			children = (
+				BED0C405470D4449E2F36B73 /* GLCapsuleViewController.h */,
+				F095487E96236DFA58F20EFB /* GLCapsuleViewController.m */,
+			);
+			path = Capsule;
+			sourceTree = "<group>";
+		};
+		964F92076CA431CBCBD5F3FC /* Ideas */ = {
+			isa = PBXGroup;
+			children = (
+				D7368130A77393920258675C /* GLIdeasViewController.h */,
+				6C174BE9F615519702BB5A00 /* GLIdeasViewController.m */,
+			);
+			path = Ideas;
+			sourceTree = "<group>";
+		};
+		97111394BE2785C251BF268A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				599AB7EC1692F94592FB1CFA /* GLStore.h */,
+				788825B4CBB7787B9EB0AB67 /* GLStore.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9D4B8326E57E70A15CB93839 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				A9B3195AB3A4F421CBE662A1 /* GLChatViewController.h */,
+				1BFB0C2BF0B3E0FE4E171E6B /* GLChatViewController.m */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		AD3066B25B63DF8C151AB1D0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1132AEFB3E18FD498CBD6A4C /* Assets.xcassets */,
+				C9E43B6FAAA520278EB0A8B2 /* Info.plist */,
+				6942AADC57FB6D41DFD59A8D /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AE0DA923FC4D782FA3E369CA /* EventHub */ = {
+			isa = PBXGroup;
+			children = (
+				4F295CF849D6E855D71E51FA /* GLEventHubViewController.h */,
+				3937B3751CFDC538F40BB0A8 /* GLEventHubViewController.m */,
+			);
+			path = EventHub;
+			sourceTree = "<group>";
+		};
+		AF21E34502E32EA7A3B38104 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8DDC23CE1E28A011B23E5381 /* Capsule */,
+				8AD1D9A05D09A56F683DABC3 /* Capture */,
+				9D4B8326E57E70A15CB93839 /* Chat */,
+				FC488C37326FDA51C1736D96 /* Common */,
+				889B885417315F275032C8D4 /* Create */,
+				AE0DA923FC4D782FA3E369CA /* EventHub */,
+				6357541D142E5C86990EA026 /* Home */,
+				964F92076CA431CBCBD5F3FC /* Ideas */,
+				4AEA903081B63C4D3A8A0F5C /* Live */,
+				41F613D5007F28910CD8FCBE /* Me */,
+				B30C7B41242C34C8F391DAB0 /* Memories */,
+				97111394BE2785C251BF268A /* Model */,
+				8C870A8C99A79A097D476EFD /* Root */,
+				41DB9BA1FF75C0F7ED6CFAE1 /* SmartPlan */,
+				08638152FE2B46CAC69DD01C /* Support */,
+				5E607C879B11C8816A0D578B /* Welcome */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B30C7B41242C34C8F391DAB0 /* Memories */ = {
+			isa = PBXGroup;
+			children = (
+				C0F24C332C54E3E8F4B0BC25 /* GLMemoriesViewController.h */,
+				3A233C249C727880ABA4FA7C /* GLMemoriesViewController.m */,
+			);
+			path = Memories;
+			sourceTree = "<group>";
+		};
+		D71BD8A0B6A6AA54EDBA6454 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2544E5B1E7659A7BA6F06444 /* GatherLoop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC488C37326FDA51C1736D96 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F919D6C9F496A114285A637D /* GLArt.h */,
+				AA8D1E71145A6DD57661AB53 /* GLArt.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		730950AD798A77AD508AA9E2 /* GatherLoopOC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 525BCBC1DF5CBA89C86DFCA9 /* Build configuration list for PBXNativeTarget "GatherLoopOC" */;
+			buildPhases = (
+				14FF1EA8F3609CFA620B4648 /* [CP] Check Pods Manifest.lock */,
+				678DFDA984997D39267CB7FC /* Sources */,
+				56D9DEB7209CC2B39E593F03 /* Frameworks */,
+				85132AF6B5F14319CB4C91EC /* Resources */,
+			);
+			dependencies = (
+			);
+			name = GatherLoopOC;
+			productName = GatherLoop;
+			productReference = 2544E5B1E7659A7BA6F06444 /* GatherLoop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1781F676DEDF5767F3243DB0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = A8B5E354B10E55F8FC85B702 /* Build configuration list for PBXProject "GatherLoopOC" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 186495F7DA296BF880DF3A22;
+			productRefGroup = D71BD8A0B6A6AA54EDBA6454 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				730950AD798A77AD508AA9E2 /* GatherLoopOC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85132AF6B5F14319CB4C91EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CDBC6D14F9914833D3F478D /* Assets.xcassets in Resources */,
+				A6D7556850195B4E096596AA /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14FF1EA8F3609CFA620B4648 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GatherLoopOC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		678DFDA984997D39267CB7FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				939827DF301F704965507C28 /* AppDelegate.m in Sources */,
+				F588182A3E0D290EB54FECE0 /* SceneDelegate.m in Sources */,
+				8FA49B067202818B21AD6A79 /* main.m in Sources */,
+				0BB3E4D0432F7DBC5484CC8E /* GLHomeViewController.m in Sources */,
+				DE3F414AA11F5881DC1E10AF /* GLCaptureViewController.m in Sources */,
+				809B4451B2FC5E7E8459D930 /* GLChatViewController.m in Sources */,
+				73147666F37444CCB1CD8626 /* GLCapsuleViewController.m in Sources */,
+				5735E7D009EDB59021DF8484 /* GLSmartPlanViewController.m in Sources */,
+				6323FC7FC9B5CF972A94AEDD /* GLWelcomeViewController.m in Sources */,
+				7DE175DF5A2E17C88310CF7A /* GLArt.m in Sources */,
+				8D44798239BCA2DF8C080579 /* GLEventHubViewController.m in Sources */,
+				450527EDC1DD185C8DBA3DFD /* GLTheme.m in Sources */,
+				166176BFC6B644E276806BE6 /* GLMeViewController.m in Sources */,
+				1DC6F0F73F04A1CFC61C136D /* GLLiveViewController.m in Sources */,
+				F09594640B248558464B4067 /* GLStore.m in Sources */,
+				6BEB085029F980100B48CD57 /* GLTabBarController.m in Sources */,
+				F5AFE83AAFD46DAEDAABAE7D /* GLIdeasViewController.m in Sources */,
+				B1CA3AB918B6C415BD4E0D24 /* GLCreateViewController.m in Sources */,
+				76039CF57A8EB443A13AD8D5 /* GLMemoriesViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		531AD298E6732C1F29542A43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A496A180BB6C6B43E40A59A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FDD7B2873687F07596FF30B /* Pods-GatherLoopOC.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 995HYU84B7;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GatherLoopOC/PrefixHeader.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/GatherLoopOC/Classes/**",
+					"$(SRCROOT)/GatherLoopOC",
+				);
+				INFOPLIST_FILE = GatherLoopOC/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					UIKit,
+					"-framework",
+					AVFoundation,
+					"-framework",
+					Photos,
+					"-framework",
+					Foundation,
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					CoreText,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.duckegg.ios;
+				PRODUCT_NAME = GatherLoop;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = duckeggkaifaProfile;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B9FE509C433568776D5E7E4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C38CECC73434CFE67D0FF37A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 930326BFB167D3C79ECB7105 /* Pods-GatherLoopOC.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 273Y5522PZ;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GatherLoopOC/PrefixHeader.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/GatherLoopOC/Classes/**",
+					"$(SRCROOT)/GatherLoopOC",
+				);
+				INFOPLIST_FILE = GatherLoopOC/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					UIKit,
+					"-framework",
+					AVFoundation,
+					"-framework",
+					Photos,
+					"-framework",
+					Foundation,
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					CoreText,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.huankecontact.test;
+				PRODUCT_NAME = GatherLoop;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		525BCBC1DF5CBA89C86DFCA9 /* Build configuration list for PBXNativeTarget "GatherLoopOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C38CECC73434CFE67D0FF37A /* Debug */,
+				A496A180BB6C6B43E40A59A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8B5E354B10E55F8FC85B702 /* Build configuration list for PBXProject "GatherLoopOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				531AD298E6732C1F29542A43 /* Debug */,
+				B9FE509C433568776D5E7E4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1781F676DEDF5767F3243DB0 /* Project object */;
+}

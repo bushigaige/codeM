@@ -1,0 +1,9 @@
+platform :ios, '15.0'
+
+project 'GatherLoopOC', {
+  'Debug' => :debug,
+  'Release' => :release,
+}
+
+target 'GatherLoopOC' do
+end
