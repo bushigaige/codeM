@@ -23,10 +23,16 @@ workflows:
         script: keychain initialize
       - name: Fetch or create the App Store profile
         script: |
+          app-store-connect bundle-ids create "$BUNDLE_ID" \
+            --platform IOS \
+            --name Gatherlooper \
+            || true
           app-store-connect fetch-signing-files "$BUNDLE_ID" \
+            --platform IOS \
             --type IOS_APP_STORE \
             --create \
-            --strict-match-identifier
+            --strict-match-identifier \
+            -v
       - name: Add certificates to keychain
         script: keychain add-certificates
       - name: Set up code signing settings on Xcode project
