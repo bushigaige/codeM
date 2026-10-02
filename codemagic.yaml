@@ -11,8 +11,6 @@ workflows:
         XCODE_WORKSPACE: GatherLoopOC/GatherLoopOC.xcworkspace
         XCODE_SCHEME: GatherLoopOC
         BUNDLE_ID: com.company.Gatherlooper
-        # App Store Connect → App Information → Apple ID. Replace 0 before relying on build numbers.
-        APP_STORE_APPLE_ID: 0
       xcode: latest
     scripts:
       - name: Install CocoaPods dependencies
@@ -44,8 +42,18 @@ workflows:
       - name: Increment build number
         script: |
           cd GatherLoopOC
-          LATEST=$(app-store-connect get-latest-testflight-build-number "$APP_STORE_APPLE_ID" || echo 0)
-          agvtool new-version -all $((LATEST + 1))
+          APPLE_ID=$(app-store-connect apps list \
+            --bundle-id-identifier "$BUNDLE_ID" \
+            --strict-match-identifier \
+            --json | python3 -c 'import json,sys; data=json.load(sys.stdin); data=data.get("data", data) if isinstance(data, dict) else data; print(data[0]["id"])')
+          echo "App Store Apple ID: $APPLE_ID"
+          LATEST=$(app-store-connect get-latest-build-number "$APPLE_ID" --platform IOS --all-versions 2>/dev/null | tail -n 1 || true)
+          case "$LATEST" in
+            ''|*[!0-9]*) LATEST=1 ;;
+          esac
+          NEXT=$((LATEST + 1))
+          echo "Next build number: $NEXT"
+          agvtool new-version -all "$NEXT"
       - name: Build ipa for distribution
         script: |
           xcode-project build-ipa \
