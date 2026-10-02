@@ -1,0 +1,47 @@
+workflows:
+  ios-app-store:
+    name: iOS App Store
+    max_build_duration: 120
+    instance_type: mac_mini_m2
+    integrations:
+      # Must match the App Store Connect API key name in Codemagic → Settings → Integrations.
+      app_store_connect: test2
+    environment:
+      ios_signing:
+        distribution_type: app_store
+        # Archive uses the Release configuration. This must match that bundle ID,
+        # the App Store profile, and the app created in App Store Connect.
+        bundle_identifier: test.duckegg.ios
+      vars:
+        XCODE_WORKSPACE: GatherLoopOC/GatherLoopOC.xcworkspace
+        XCODE_SCHEME: GatherLoopOC
+        # App Store Connect → App Information → Apple ID. Replace 0 before relying on build numbers.
+        APP_STORE_APPLE_ID: 0
+      xcode: latest
+    scripts:
+      - name: Install CocoaPods dependencies
+        script: |
+          cd GatherLoopOC
+          pod install
+      - name: Set up code signing settings on Xcode project
+        script: |
+          xcode-project use-profiles
+      - name: Increment build number
+        script: |
+          cd GatherLoopOC
+          LATEST=$(app-store-connect get-latest-testflight-build-number "$APP_STORE_APPLE_ID" || echo 0)
+          agvtool new-version -all $((LATEST + 1))
+      - name: Build ipa for distribution
+        script: |
+          xcode-project build-ipa \
+            --workspace "$XCODE_WORKSPACE" \
+            --scheme "$XCODE_SCHEME"
+    artifacts:
+      - build/ios/ipa/*.ipa
+      - /tmp/xcodebuild_logs/*.log
+      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
+    publishing:
+      app_store_connect:
+        auth: integration
+        submit_to_testflight: true
+        submit_to_app_store: false

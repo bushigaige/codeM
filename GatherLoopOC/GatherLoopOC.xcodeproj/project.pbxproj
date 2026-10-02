@@ -493,6 +493,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = test.duckegg.ios;
 				PRODUCT_NAME = GatherLoop;
+				VERSIONING_SYSTEM = "apple-generic";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = duckeggkaifaProfile;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -553,6 +554,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.huankecontact.test;
 				PRODUCT_NAME = GatherLoop;
+				VERSIONING_SYSTEM = "apple-generic";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
