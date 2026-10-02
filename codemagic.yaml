@@ -23,15 +23,19 @@ workflows:
         script: keychain initialize
       - name: Fetch or create the App Store profile
         script: |
-          app-store-connect bundle-ids create "$BUNDLE_ID" \
-            --platform IOS \
-            --name Gatherlooper \
-            || true
+          KEY_PATH="$CM_BUILD_DIR/ios_distribution_private_key"
+          if [ -n "${CERTIFICATE_PRIVATE_KEY:-}" ]; then
+            printf '%s\n' "$CERTIFICATE_PRIVATE_KEY" > "$KEY_PATH"
+          else
+            openssl genrsa -out "$KEY_PATH" 2048
+          fi
+          chmod 600 "$KEY_PATH"
           app-store-connect fetch-signing-files "$BUNDLE_ID" \
             --platform IOS \
             --type IOS_APP_STORE \
             --create \
             --strict-match-identifier \
+            --certificate-key "@file:${KEY_PATH}" \
             -v
       - name: Add certificates to keychain
         script: keychain add-certificates
