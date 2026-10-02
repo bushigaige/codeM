@@ -5,7 +5,7 @@ workflows:
     instance_type: mac_mini_m2
     integrations:
       # Must match the App Store Connect API key name in Codemagic → Settings → Integrations.
-      app_store_connect: test2
+      app_store_connect: GatherKey
     environment:
       vars:
         XCODE_WORKSPACE: GatherLoopOC/GatherLoopOC.xcworkspace
