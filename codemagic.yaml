@@ -7,14 +7,10 @@ workflows:
       # Must match the App Store Connect API key name in Codemagic → Settings → Integrations.
       app_store_connect: test2
     environment:
-      ios_signing:
-        distribution_type: app_store
-        # Archive uses the Release configuration. This must match that bundle ID,
-        # the App Store profile, and the app created in App Store Connect.
-        bundle_identifier: com.company.Gatherlooper
       vars:
         XCODE_WORKSPACE: GatherLoopOC/GatherLoopOC.xcworkspace
         XCODE_SCHEME: GatherLoopOC
+        BUNDLE_ID: com.company.Gatherlooper
         # App Store Connect → App Information → Apple ID. Replace 0 before relying on build numbers.
         APP_STORE_APPLE_ID: 0
       xcode: latest
@@ -23,9 +19,18 @@ workflows:
         script: |
           cd GatherLoopOC
           pod install
-      - name: Set up code signing settings on Xcode project
+      - name: Set up keychain
+        script: keychain initialize
+      - name: Fetch or create the App Store profile
         script: |
-          xcode-project use-profiles
+          app-store-connect fetch-signing-files "$BUNDLE_ID" \
+            --type IOS_APP_STORE \
+            --create \
+            --strict-match-identifier
+      - name: Add certificates to keychain
+        script: keychain add-certificates
+      - name: Set up code signing settings on Xcode project
+        script: xcode-project use-profiles
       - name: Increment build number
         script: |
           cd GatherLoopOC
