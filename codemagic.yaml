@@ -11,7 +11,7 @@ workflows:
         distribution_type: app_store
         # Archive uses the Release configuration. This must match that bundle ID,
         # the App Store profile, and the app created in App Store Connect.
-        bundle_identifier: test.duckegg.ios
+        bundle_identifier: com.company.Gatherlooper
       vars:
         XCODE_WORKSPACE: GatherLoopOC/GatherLoopOC.xcworkspace
         XCODE_SCHEME: GatherLoopOC

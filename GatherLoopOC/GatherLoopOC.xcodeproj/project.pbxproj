@@ -330,6 +330,8 @@
 				56D9DEB7209CC2B39E593F03 /* Frameworks */,
 				85132AF6B5F14319CB4C91EC /* Resources */,
 			);
+			buildRules = (
+			);
 			dependencies = (
 			);
 			name = GatherLoopOC;
@@ -454,11 +456,9 @@
 			baseConfigurationReference = 9FDD7B2873687F07596FF30B /* Pods-GatherLoopOC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 995HYU84B7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/GatherLoopOC/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = NO;
@@ -491,12 +491,11 @@
 					"-framework",
 					CoreText,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = test.duckegg.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.company.Gatherlooper;
 				PRODUCT_NAME = GatherLoop;
-				VERSIONING_SYSTEM = "apple-generic";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = duckeggkaifaProfile;
 				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
@@ -552,10 +551,10 @@
 					"-framework",
 					CoreText,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.huankecontact.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.company.Gatherlooper;
 				PRODUCT_NAME = GatherLoop;
-				VERSIONING_SYSTEM = "apple-generic";
 				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
