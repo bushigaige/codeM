@@ -41,26 +41,25 @@ workflows:
             echo "Distribution certificate quota is full. Removing existing distribution certificates."
             app-store-connect certificates list --type IOS_DISTRIBUTION --json > /tmp/certs-ios.json || echo '[]' > /tmp/certs-ios.json
             app-store-connect certificates list --type DISTRIBUTION --json > /tmp/certs-dist.json || echo '[]' > /tmp/certs-dist.json
-            python3 - << 'PY'
-import json, subprocess
-ids = []
-for path in ("/tmp/certs-ios.json", "/tmp/certs-dist.json"):
-    raw = open(path).read().strip()
-    start = raw.find("[")
-    if start < 0:
-        start = raw.find("{")
-    if start < 0:
-        continue
-    data = json.loads(raw[start:])
-    if isinstance(data, dict):
-        data = data.get("data", [])
-    for item in data:
-        if isinstance(item, dict) and item.get("id"):
-            ids.append(item["id"])
-for cid in dict.fromkeys(ids):
-    print("Deleting certificate", cid)
-    subprocess.check_call(["app-store-connect", "certificates", "delete", cid])
-PY
+          python3 -c 'import json, subprocess
+          ids = []
+          for path in ("/tmp/certs-ios.json", "/tmp/certs-dist.json"):
+              raw = open(path).read().strip()
+              start = raw.find("[")
+              if start < 0:
+                  start = raw.find("{")
+              if start < 0:
+                  continue
+              data = json.loads(raw[start:])
+              if isinstance(data, dict):
+                  data = data.get("data", [])
+              for item in data:
+                  if isinstance(item, dict) and item.get("id"):
+                      ids.append(item["id"])
+          for cid in dict.fromkeys(ids):
+              print("Deleting certificate", cid)
+              subprocess.check_call(["app-store-connect", "certificates", "delete", cid])
+          '
             app-store-connect certificates create \
               --type IOS_DISTRIBUTION \
               --certificate-key "@file:${KEY_PATH}" \
